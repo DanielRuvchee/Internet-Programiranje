@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca-03</title>
+</head>
+<body>
+<h1 id="longest"></h1>
+
+<script>
+    const string = window.prompt("Enter a sentence!");
+    const element = document.getElementById("longest");
+    let longestString = "";
+
+    string.split(" ").forEach(i => i.length > longestString.length ? longestString = i : "");
+    element.innerHTML = longestString;
+</script>
+</body>
+</html>
