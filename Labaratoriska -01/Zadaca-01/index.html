@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca-01</title>
+</head>
+<body>
+<h1 id="result"></h1>
+<script type="text/javascript">
+    const number = prompt("Vnesete tricifren broj!");
+    const element = document.getElementById('result');
+    if(number.length != 3 || number.charAt(0)==='0' || isNaN(parseInt(number))){
+        element.innerHTML ="Vneseniot broj ne e tricifren!"
+    }else{
+        let flag = true;
+        for(let i=0; i<number.length; i++){
+            if(number.charAt(i)!=number.charAt(number.length-i-1)){
+                flag = false;
+                break;
+            }
+        }
+        if(flag) element.innerHTML="Palindrom!";
+        else  element.innerHTML = "Ne e palindrome";
+    }
+
+</script>
+</body>
+</html>
