@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca-04</title>
+</head>
+<body>
+<h1 id="result"></h1>
+
+<script>
+    const element = document.getElementById("result");
+    const input1 = window.parseInt(prompt("Enter first number"));
+    const input2 = window.parseInt(prompt("Enter second number"));
+    const input3 = window.parseInt(prompt("Enter third number"));
+
+    if(input1 * input2 * input3 > 0) {
+        element.innerHTML = "Positive";
+    } else element.innerHTML = "Negative";
+
+
+</script>
+</body>
+</html>
